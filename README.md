@@ -1,6 +1,6 @@
-# muse-portal-hub
+# muse-portal-kit
 
-> **Repository:** `github.com/hanfang/muse-portal-hub` (public repo to be created)
+> **Repository:** `github.com/hanfang/muse-portal-kit` (public repo to be created)
 
 Turn a retired **Meta Portal** into a room-scale voice satellite for **Muse**:
 "hey muse" wake word → spoken question → spoken answer (e.g. *"hey muse, what's the weather?"*).
