@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Edge-TTS "trusted client token": a PUBLIC constant baked into every
+      Microsoft Edge build and every edge-tts reimplementation (it is NOT a
+      per-user secret or API key).
+
+      It is intentionally not committed with a value. Copy it from a local
+      `edge-tts` Python install:
+
+          python3 -c "from edge_tts.constants import TRUSTED_CLIENT_TOKEN; print(TRUSTED_CLIENT_TOKEN)"
+
+      ...and paste it below. VoiceService reads it at startup.
+    -->
+    <string name="edge_trusted_client_token">REPLACE_WITH_PUBLIC_TOKEN_FROM_EDGE_TTS</string>
+</resources>

@@ -33,4 +33,13 @@ android {
 
 dependencies {
     implementation(project(":protocol"))
+
+    // Edge-TTS transport (OkHttp WebSocket) + openWakeWord (ONNX Runtime).
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.github.msnilsen:openwakeword-android:0.1.0")
+
+    testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.4")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.11.4")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.11.4")
 }
