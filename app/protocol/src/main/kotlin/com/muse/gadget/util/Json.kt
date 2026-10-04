@@ -190,8 +190,10 @@ object Json {
                                     if (lo != null && lo in 0xDC00..0xDFFF) {
                                         pos += 6
                                         sb.append(
-                                            Character.toString(
-                                                0x10000 + ((code - 0xD800) shl 10) + (lo - 0xDC00),
+                                            String(
+                                                Character.toChars(
+                                                    0x10000 + ((code - 0xD800) shl 10) + (lo - 0xDC00),
+                                                ),
                                             ),
                                         )
                                         continue
