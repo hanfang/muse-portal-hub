@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muse Voice Satellite</string>
+    <string name="hint_type_message">Type a message to Muse…</string>
+    <string name="send">Send</string>
+    <string name="talk">Hold to talk</string>
+</resources>
