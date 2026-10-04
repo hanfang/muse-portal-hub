@@ -1,0 +1,49 @@
+# ============================================================
+# muse-portal-hub .gitignore
+# This project will be open-sourced (Apache 2.0). The rules below exist
+# so that no token, key, certificate, or personal data can ever be
+# committed by accident.
+# ============================================================
+
+# ---- SDK tokens / account credentials (HIGHEST RISK) ----
+# Any file whose name contains an mgst_ SDK token prefix, and any local
+# credential/token config, must never enter version control.
+*mgst_*
+*token*.json
+*credential*.json
+credentials/
+.secrets/
+
+# ---- Android / Gradle ----
+local.properties
+*.jks
+*.keystore
+build/
+.gradle/
+out/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- Certificates and private keys ----
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.der
+id_rsa*
+id_ed25519*
+*.pub
+!**/*.pub.xml
+
+# ---- IDE / OS ----
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- Research inputs (private notes, may contain personal data) ----
+research-findings.md
+protocol-spec.md
